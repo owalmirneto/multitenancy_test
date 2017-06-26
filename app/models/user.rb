@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   after_create :create_tenant
+  self.table_name = 'public.users'
 
   protected
 
